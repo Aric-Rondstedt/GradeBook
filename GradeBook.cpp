@@ -27,3 +27,22 @@ void GradeBook::displayMessage() const
 {
 	std::cout << "Welcome to the Grade Book for\n" << getCourseName() << "!" << std::endl;
 }
+
+void GradeBook::determineClassAverade() const
+{
+	int total = 0;
+	unsigned int gradeCounter = 1;
+
+	while (gradeCounter <= 10) {
+		cout << "Enter grade:";
+		int grade = 0;
+		cin >> grade;
+		total += grade;
+		gradeCounter++;
+	}
+
+	int average = total / 10;
+
+	cout << "\nTotal of all 10 grades is " << total << endl;
+	cout << "Class average is " << average << endl;
+}

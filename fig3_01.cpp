@@ -16,4 +16,5 @@ int main() {
 	cout << "gradeBook1's course name is:" << gradeBook1.getCourseName()
 		<< "\ngradeBook2's course name is::" << gradeBook2.getCourseName()
 		<< endl;
+	gradeBook1.determineClassAverade();
 }
